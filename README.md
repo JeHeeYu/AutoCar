@@ -32,7 +32,6 @@ STOP = 'B'
 RIGHT = 'C'
 LEFT = 'D'
 </pre>
-<br>
 ## Motor GPIO Pin
 <pre>
 FR : FRONT_IN_1_Pin, FRONT_IN_2_Pin
