@@ -22,8 +22,8 @@ Detection Part인 Xavier와 Control Part인 STM32 를 분리하여 감지, 구�
 4. HSV 변환 검출
 5. Line Detection
 </pre>
-<br>
 Detection에서 Line을 검출하여 각도 계산 후 각도에 맞는 직진, 좌회전, 우회전 구동
+<img src="https://user-images.githubusercontent.com/87363461/188872207-b5ed7b45-21eb-45d5-9764-12f658535d7b.JPG" width="680" height="320">
 <br>
 Detection Part와 Control Part는 Serial 통신을 이용하여 통신
 <pre>
