@@ -1,4 +1,6 @@
 # OpenCV Line Tracing Project
+## 개요
+OpenCV를 이용한 Line Tracing 및 자율 주행 프로젝트 예제
 ## Hardware
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
@@ -10,3 +12,24 @@
 <b>Vision</b> : OpenCV
 <br>
 <b>Firmware</b> : STM32CUBEIDE
+## Description
+Detection Part인 Xavier와 Control Part인 STM32 를 분리하여 감지, 구동을 나눔
+### 동작 순서
+<pre>
+1. 영상 취득
+2. Gray Scale 변환
+3. ROI 설정
+4. HSV 변환 검출
+5. Line Detection
+</pre>
+<br>
+Detection에서 Line을 검출하여 각도 계산 후 각도에 맞는 직진, 좌회전, 우회전 구동
+<br>
+Detection Part와 Control Part는 Serial 통신을 이용하여 통신
+<pre>
+STRAGIHT = 'A'
+STOP = 'B'
+RIGHT = 'C'
+LEFT = 'D'
+</pre>
+<br>
