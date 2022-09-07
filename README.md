@@ -35,21 +35,17 @@ LEFT = 'D'
 <br>
 ## Motor GPIO Pin
 <pre>
-/*************Wheel Description************************************
- *
- * FR : FRONT_IN_1_Pin, FRONT_IN_2_Pin
- * FL : FRONT_IN_3_Pin, FRONT_IN_4_Pin
- * BR : BACK_IN_3_Pin, BACK_IN_4_Pin
- * BL : BACK_IN_1_Pin, BACK_IN_2_Pin
- *
- * Direction of Movement	FL		 FR		   BL		BR
- *		  Straight		 Forward   Forward   Forward  Forward
- *		  Back	    	 Backward  Backward  Backward Backward
- *	    Left 			   Backward  Forward	 Forward  Backward
- *		  Right			   Forward   Backward	 Backward Forward
- *		Upper Right		 Forward      -	        -     Forward
- *		Upper Left		    -      Forward	 Forward     -
- *		Bottom Right	    -      Backward  Backward    -
- *		Bottom Left		 Backward     -	        -     Backward
- *****************************************************************/
+FR : FRONT_IN_1_Pin, FRONT_IN_2_Pin
+FL : FRONT_IN_3_Pin, FRONT_IN_4_Pin
+BR : BACK_IN_3_Pin, BACK_IN_4_Pin
+BL : BACK_IN_1_Pin, BACK_IN_2_Pin
+                 FL    FR    BL   BR
+Straight      Forward   Forward   Forward  Forward
+Back          Backward  Backward  Backward Backward
+Left          Backward  Forward	  Forward  Backward
+Right         Forward   Backward  Backward Forward
+Upper Right   Forward      -         -     Forward
+Upper Left       -      Forward   Forward     -
+Bottom Right     -      Backward  Backward    -
+Bottom Left  Backward      -         -     Backward
 </pre>
